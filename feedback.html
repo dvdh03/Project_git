@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback</title>
+    <style>
+        body {
+            font-family: Cambria;
+            text-align: center;
+        }
+        .banner {
+            background-color: black;
+            padding: 10px;
+            margin-top: 0;
+        }
+        h1 {
+            background-color: black;
+            color: white;
+            padding: 10px;
+        }
+        .checklist {
+            list-style: none;
+            padding: 0;
+            align-items: center;     
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 2px solid black;
+        }
+        a.button {
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <center><img src="adidas.png" width="100"></center>
+    </div>
+    
+    <h1>Feedback Form</h1>
+    
+    <form>
+        <div>
+            <label>Rate how user-friendly you found the site</label>
+            <ul class="checklist">
+                <li><input type="checkbox" name="user_friendly" value="very_easy"> Very easy to use</li>
+                <li><input type="checkbox" name="user_friendly" value="easy"> Easy to use</li>
+                <li><input type="checkbox" name="user_friendly" value="average"> Average</li>
+                <li><input type="checkbox" name="user_friendly" value="difficult"> Difficult to use</li>
+                <li><input type="checkbox" name="user_friendly" value="very_difficult"> Very difficult to use</li>
+            </ul>
+        </div>
+
+        <div>
+            <label >Feedback</label>
+            <textarea name="feedback" placeholder="Enter your feedback here"></textarea>
+        </div>
+
+        <a href="thank.html" class="button">Submit Feedback</a>
+    </form>
+</body>
+</html>
